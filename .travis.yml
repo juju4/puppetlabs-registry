@@ -30,7 +30,7 @@ matrix:
 branches:
   only:
     - master
-    - devel*
+    - devel-hkcr
     - /^v\d/
 notifications:
   email: false
