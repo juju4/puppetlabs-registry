@@ -8,5 +8,6 @@ registry_value { "HKCR\\htafile\\shell\\open\\command":
   path       => "HKCR\\htafile\\shell\\open\\command",
   ensure     => present,
   type       => string,
+  value      => '(default)',
   data       => '%windir%\system32\notepad.exe',
 }
