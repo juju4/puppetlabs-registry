@@ -4,7 +4,7 @@ Registry_key { ensure => present }
 Registry_value { ensure => present, data => 'Puppet Default Data' }
 
 registry_key { 'HKCR\\htafile\\shell\\open\\command': ensure => present }
-registry_value { "HKCR\\htafile\\shell\\open\\command":
+registry::value { "HKCR\\htafile\\shell\\open\\command":
   path       => "HKCR\\htafile\\shell\\open\\command",
   ensure     => present,
   type       => string,
